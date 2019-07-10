@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func pressMeButtonPressed(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Hola mundo", message: "El mejor hola mundo ever!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: .none)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: .none)
+    }
 }
 
